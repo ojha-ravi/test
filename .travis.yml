@@ -1,0 +1,12 @@
+language: node_js
+
+before_script:
+  
+
+jobs:
+  include:
+    - stage: Create Core PR
+      script:
+        - sh ./scripts/create-core-pr.sh
+      env: NAME="Create CORE PR"
+      if: branch = master
