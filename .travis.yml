@@ -9,7 +9,7 @@ jobs:
     script:
     - sh ./scripts/create-core-pr.sh
     env: NAME="Create CORE PR"
-    if: branch = master
+    if: branch = test
 
   - stage: Create Core PR 2
     script:
