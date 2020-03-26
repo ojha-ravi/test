@@ -6,7 +6,7 @@ jobs:
     script:
     - sh ./scripts/create-core-pr.sh
     env: NAME="Create CORE PR"
-    if: branch = master OR branch = test
+    if: branch = master OR branch = develop OR branch =~ ^release\/.*$
 
   - stage: Create Core PR 2
     script:
