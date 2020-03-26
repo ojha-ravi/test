@@ -7,11 +7,11 @@ jobs:
   include:
   - stage: Create Core PR
     script:
-      - sh ./scripts/create-core-pr.sh
+    - sh ./scripts/create-core-pr.sh
     env: NAME="Create CORE PR"
     if: branch = master
 
   - stage: Create Core PR 2
-  script:
+    script:
     - sh ./scripts/create-core-pr.sh
-  env: NAME="Create CORE PR"
+    env: NAME="Create CORE PR"
